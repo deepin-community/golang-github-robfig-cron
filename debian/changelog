@@ -1,5 +1,44 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-robfig-cron (3.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 26 Jan 2020 22:49:36 +1100
+
+golang-github-robfig-cron (3.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Standards-Version: 4.4.1
+  * DH to version 12.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 16 Dec 2019 12:15:18 +1100
+
+golang-github-robfig-cron (1+git20160914.40.783cfcb-2) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dmitry Smirnov ]
+  * Testsuite: autopkgtest-pkg-go
+  * Standards-Version: 4.1.4; Priority: optional.
+  * debhelper & compat to version 11
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Wed, 20 Jun 2018 15:03:16 +1000
+
+golang-github-robfig-cron (1+git20160914.40.783cfcb-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Tim Potter <tpot@hpe.com>  Tue, 21 Feb 2017 16:46:52 +1100
+
+golang-github-robfig-cron (1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add tzdata into build-depends (Closes: #839433).
+
+ -- Liang Yan <liangy@hpe.com>  Mon, 10 Oct 2016 15:49:52 -0600
+
+golang-github-robfig-cron (1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #829453).
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 03 Jul 2016 23:10:38 +1000
