@@ -1,15 +1,23 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-robfig-cron
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-go,
+               tzdata
+Standards-Version: 4.4.1
+Homepage: https://github.com/robfig/cron
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-robfig-cron
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-robfig-cron.git
+XS-Go-Import-Path: github.com/robfig/cron
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-robfig-cron-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-go
+Description: cron library for go
+ This library implements a cron spec parser and runner.
